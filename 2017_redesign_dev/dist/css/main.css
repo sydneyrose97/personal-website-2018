@@ -167,6 +167,9 @@ body {
 .nav-logo-container {
     height: 129px;
     width: 57px;
+    position: fixed;
+    top: 20px;
+    left: 25px;
 }
 
 .nav-logo-container a {
@@ -186,12 +189,12 @@ body {
     -webkit-transform: rotate(-90deg);
     /* Safari */
     transform: rotate(-90deg);
-    width: 500px;
+    width: 385px;
     position: absolute;
-    top: 41%;
+    top: 51%;
     bottom: 0px;
     right: 0px;
-    left: -200px;
+    left: -145px;
     height: 20px;
     margin: 0;
 }
@@ -199,10 +202,12 @@ body {
 .menu-icon-container {
     height: 35px;
     width: 50px;
-    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
 }
 .menu-icon-container img{
-
+    width: 50px;
 }
 
 /* ==========================================================================
