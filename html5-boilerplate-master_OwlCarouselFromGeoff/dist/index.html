@@ -1,44 +1,49 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Sydney Lynn Designs & Photography</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sydney Lynn Designs & Photography</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="https://use.typekit.net/iia3ofr.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="css/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iia3ofr.css">
 
-    </head>
-    <body>
+    <link rel="stylesheet" href="css/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
 
 
-      <div class="master-flex-container">
+    <div class="master-flex-container">
+
+        <div id="dark-nav-container" class="dark-nav-container">
+
+        </div>
+
+        <div id="sidenav" class="sidenav">
+            <a href="#" class="mainNavItem">About</a>
+            <a href="#" class="mainNavItem">Services</a>
+            <a href="#" class="subNavItem">Lifestyle Portraiture</a>
+            <a href="#" class="subNavItem">Weddings</a>
+            <a href="#" class="subNavItem">Black Background Portraiture</a>
+            <a href="#" class="subNavItem">Pet Portraiture</a>
+            <a href="#" class="subNavItem">Graphic Design</a>
+            <a href="#" class="subNavItem">Web Design & Development</a>
+            <a href="#" class="sayHelloBtn">Say Hello!</a>
+        </div>
 
         <div class="nav-container">
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#" class="mainNavItem">About</a>
-                <a href="#" class="mainNavItem">Services</a>
-                <a href="#" class="subNavItem">Lifestyle Portraiture</a>
-                <a href="#" class="subNavItem">Weddings</a>
-                <a href="#" class="subNavItem">Black Background Portraiture</a>
-                <a href="#" class="subNavItem">Pet Portraiture</a>
-                <a href="#" class="subNavItem">Graphic Design</a>
-                <a href="#" class="subNavItem">Web Design & Development</a>
-                <a href="#" class="sayHelloBtn">Say Hello!</a>
-            </div>
-
             <div class="nav-logo-container">
                 <a href="/index.html">
                   <embed name="navLogo" id="navLogo" src="img/navLogo.svg" width="57" height="129">
@@ -47,7 +52,13 @@
 
             <h1 class="sideNavName">Sydney Lynn Designs &amp; Photography</h1>
             <div class="menu-icon-container">
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/navMenuIcon.svg" class="navMenuIcon"/></span>
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img/navMenuIcon.svg" class="navMenuIcon"/></span> -->
+
+                <div class="hamburger-container" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
             </div>
         </div>
 
@@ -55,23 +66,24 @@
 
             <div class="hero-image-container">
 
-        <div class="owl-carousel">
-            <div>
-              <img src="img/home/hero1.png" alt="portfolio image 1" />
-            </div>
-            <div>
-              <img src="img/home/hero1.png" alt="portfolio image 1" />
-            </div>
-            <div>
-              <img src="img/home/hero1.png" alt="portfolio image 1" />
-            </div>
-            <div>
-              <img src="img/home/hero1.png" alt="portfolio image 1" />
-            </div>
+                <div class="owl-carousel">
+                    <div>
+                        <img src="img/home/hero1.jpg" alt="portfolio image 1" />
+                    </div>
+                    <div>
+                        <img src="img/home/hero2.jpg" alt="portfolio image 2" />
+                    </div>
+                    <div>
+                        <img src="img/home/hero3.jpg" alt="portfolio image 3" />
+                    </div>
+                    <div>
+                        <img src="img/home/hero4.jpg" alt="portfolio image 4" />
+                    </div>
+                    <div>
+                        <img src="img/home/hero5.jpg" alt="portfolio image 5" />
+                    </div>
+                </div>
 
-          </div>
-
-                <img src="img/home/hero1.png" alt="portfolio image 1" />
             </div>
 
             <div class="bio-container">
@@ -178,47 +190,68 @@
     </div>
 
 
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
 
 
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
+    </script>
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+    <script>
+      function myFunction(x) {
+          x.classList.toggle("change");
+          document.getElementById("dark-nav-container").classList.toggle("animate-dark-nav-container");
+          document.getElementById("sidenav").classList.toggle("animate-sidenav");
         }
-    }
-})
-</script>
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
 
 
 
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 
-
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-    </body>
 </html>
