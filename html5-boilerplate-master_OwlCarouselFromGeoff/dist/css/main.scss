@@ -227,6 +227,12 @@ a{
 .socialMediaBtn svg{
   width: 45px;
   height: 45px;
+
+  &:hover{
+    .cls-1{
+    fill: #00bdcd;
+  }
+}
 }
 
 .socialMediaSvg:hover{
@@ -361,8 +367,7 @@ a{
 /* End Animation */
 
 .bio-container{
-  max-width: 960px;
-  width: 80%;
+  width: 960px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -397,15 +402,13 @@ a{
 }
 
 .services-container{
-  max-width: 1240px;
-  width: 80%;
+  width: 1240px;
   margin: 0 auto;
   padding: 100px 0;
 }
 
 .copy-content-container{
-  max-width: 650px;
-  width: 100%;
+  width: 650px;
   margin: 0 auto;
   padding-bottom: 75px;
 }
@@ -414,68 +417,60 @@ a{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .col-halfs{
   width: 49%;
 }
 
-.services{
-  padding-bottom: 70px;
-  display: flex;
-  align-items: center;
+.service-type{
+  padding-bottom: 30px;
+}
+
+.black-cover{
+  background: #000;
+  opacity:
+}
+
+.black-cover-a{
   width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  background-color: #000;
+  position: relative;
 }
 
-.services img{
-  padding-right: 40px;
-  width: 60%;
-}
-
-.services-content-container{
-  width: 40%;
+.black-cover-a img{
+  opacity: 0.7;
+  width: 100%;
+  transition: 0.3s;
 }
 
 .services-names{
-  color: #00bdcd;
+  text-align: center;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.135em;
-  font-size: 30px;
-  line-height: 40px;
-  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-.service-description{
-  font-size: 14px;
-  font-weight: 100;
-  padding-bottom: 40px;
-}
-
-.detailBtn{
-  width: 150px;
-  padding: 8px 15px;
-  background-color: #00bdcd;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  display: block;
+.black-cover-a img:hover{
+  opacity: 1;
   transition: 0.3s;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
-.detailBtn:hover{
-  background-color: #1c1c1c;
-  color: #fff;
+.black-cover-a:hover{
+
 }
 
 .contact-container{
-  max-width: 960px;
-  width: 80%;
+  width: 960px;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -483,9 +478,10 @@ a{
 
 /* Form Styling */
 
-.contact-form{
-  max-width: 650px;
-  width: 100%;
+#contact-form{
+	float: right;
+	width: 400px;
+	margin: -25px -51px 0px 0px;
 }
 
 input[type=text] {
@@ -495,7 +491,6 @@ input[type=text] {
 	font-family: "museo-sans-rounded", sans-serif;
   font-weight: 100;
 	width: 100%;
-  max-width: 637px;
 	color: #a1a1a1;
 	font-size: 20px;
 	line-height: 36px;
@@ -509,17 +504,15 @@ input[type=submit]{
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
-    max-width: 650px;
   	margin: 35px 0px;
   	font-family: "museo-sans-rounded", sans-serif;
   	font-weight: 700;
     letter-spacing: 0.1em;
   	font-size: 20px;
   	line-height: 24px;
-  	border-radius: 3px;
+  	border-radius: 5px 5px 5px 5px;
     transition: 0.3s;
     cursor: pointer;
-    font-weight: 500;
 }
 
 input[type=submit]:hover{
@@ -534,9 +527,8 @@ textarea[type=text][name=comments] {
   	font-family: "museo-sans-rounded", sans-serif;
     font-weight: 100;
   	width: 100%;
-    max-width: 632px;
   	height: 130px;
-  	color: #1c1c1c;
+  	color: #a1a1a1;
   	font-size: 20px;
   	line-height: 36px;
   	padding-left: 10px;
